@@ -18,6 +18,15 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use((req, res, next, err) => {
+
+    console.log("Error");
+    const error = {Error: `Hubo un error ${err}`}
+
+    res.status(500).send(JSON.stringify(error, null, 2));
+
+});
+
 /* --- ROUTES --- */
 
 app.use("/", homeRouter);
