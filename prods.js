@@ -1,5 +1,5 @@
 module.exports = [
-    { id: 1, name: "Gorra snapback Stussy azul", price: 20, thumbnail: "https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/basket_empty_shop_buy-256.png" },
-    { id: 2, name: "Nike Airforce 1 High 07 negras", price: 100, thumbnail: "https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/basket_empty_shop_buy-256.png" },
-    { id: 3, name: "Buzo Cyberpunk Tokyo", price: 35, thumbnail: "https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/basket_empty_shop_buy-256.png" }
+    { id: 1, name: "Cohete Thor", price: 20, thumbnail: "https://cdn1.iconfinder.com/data/icons/space-flat-galaxy-radio/512/starship-256.png" },
+    { id: 2, name: "Satelite Zeus", price: 100, thumbnail: "https://cdn1.iconfinder.com/data/icons/space-flat-galaxy-radio/512/satellite-256.png" },
+    { id: 3, name: "Cohete? Asteroid", price: 35, thumbnail: "https://cdn1.iconfinder.com/data/icons/space-flat-galaxy-radio/512/laser_gun-256.png" }
 ];
