@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/nav') %>
+
+            <h2>Ingresar un nuevo producto</h2>
+
+            <form action="/ejs/products" method="POST">
+
+                <label for="name">Nombre del producto:</label>
+                <input type="text" name="name" id="name">
+
+                <label for="name">Precio del producto:</label>
+                <input type="number" name="price" id="price">
+
+                <label for="name">"Ruta" de imagen del producto:</label>
+                <input type="text" name="thumbnail" id="thumbnail">
+
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+
+            </form>
+
+
+    </body>
+
+</html>

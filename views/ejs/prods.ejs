@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/nav') %>
+            <h2>Todos los productos</h2>
+
+            <ul>
+                <% prods.forEach(function(prod) { %>
+
+                    <li>
+                        <p>Nombre: <%=prod.name %>
+                        </p>
+
+                        <p>Precio: <%=prod.price %>
+                        </p>
+
+                        <p>"Ruta" de imagen: <%=prod.thumbnail%>
+                        </p>
+                    </li>
+
+
+                    <% }) %>
+            </ul>
+
+    </body>
+
+</html>
