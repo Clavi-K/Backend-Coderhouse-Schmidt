@@ -1,14 +1,26 @@
+<h2>Todos los productos</h2>
+
 <ul>
+
+    {{#if prods}}
 
     {{#each prods}}
 
     <li>
         <p>Nombre: {{this.name}}</p>
         <p>Precio: {{this.price}}</p>
-        <p>"Ruta" de imagen: {{this.thumbnail}}</p>
+        <img src="{{this.thumbnail}}">
     </li>
 
     {{/each}}
+
+    {{else}}
+
+    <li>
+        <p>No hay productos :c</p>
+    </li>
+
+    {{/if}}
 
     <a href="/">Home</a>
 

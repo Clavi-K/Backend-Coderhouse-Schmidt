@@ -2,13 +2,15 @@ extends layout/base.pug
 block content
     h1 Productos
     ul 
-        each prod in prods 
-            li
-                p Nombre: 
-                p=prod.name
+        if prods.length > 0 || !prods
+            each prod in prods 
+                li
+                    p Nombre: 
+                    p=prod.name
 
-                p Precio: 
-                p=prod.price
+                    p Precio: 
+                    p=prod.price
 
-                p "Ruta" de imagen:
-                p=prod.thumbnail
+                    img(src=prod.thumbnail)
+        else 
+            p No hay productos :c

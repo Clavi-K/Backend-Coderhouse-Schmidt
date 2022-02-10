@@ -4,7 +4,7 @@ const { Router } = express;
 const router = Router();
 const prods = require("../prods");
 
-router.get("/", (req, res) => {
+router.get("/products", (req, res) => {
 
     res.render("prods", { prods });
 

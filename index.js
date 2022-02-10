@@ -3,25 +3,26 @@ const app = express();
 const PORT = process.env.PORT || 8082;
 const path = require("path");
 const homeRouter = require("./routes/home");
-//const hbsRouter = require("./routes/hbs");
-//const pugRouter = require("./routes/pug");
-const ejsRouter = require("./routes/ejs");
+const hbsRouter = require("./routes/hbs");
+// const pugRouter = require("./routes/pug");
+// const ejsRouter = require("./routes/ejs");
 
 
 
 /* --- ENGINES --- */
 
-/*
+
 const hbsEngine = require("./engines/handlebars");
 hbsEngine(app);
 
+/*
 const pugEngine = require("./engines/pug");
 pugEngine(app);
-
 */
-
+/*
 const ejsEngine = require("./engines/ejs");
 ejsEngine(app);
+*/
 
 /* --- PORT --- */
 
@@ -48,6 +49,6 @@ app.use((req, res, next, err) => {
 /* --- ROUTES --- */
 
 app.use("/", homeRouter);
-// app.use("/hbs", hbsRouter);
+app.use("/hbs", hbsRouter);
 // app.use("/pug", pugRouter);
-app.use("/ejs", ejsRouter);
+// app.use("/ejs", ejsRouter);

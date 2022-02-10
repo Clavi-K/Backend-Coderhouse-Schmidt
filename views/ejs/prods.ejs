@@ -9,21 +9,28 @@
             <h2>Todos los productos</h2>
 
             <ul>
-                <% prods.forEach(function(prod) { %>
+                <% if (prods && prods.length > 0) { %>
 
-                    <li>
-                        <p>Nombre: <%=prod.name %>
-                        </p>
+                    <% prods.forEach(function(prod) { %>
 
-                        <p>Precio: <%=prod.price %>
-                        </p>
-
-                        <p>"Ruta" de imagen: <%=prod.thumbnail%>
-                        </p>
-                    </li>
-
-
+                        <li>
+                            <p>Nombre: <%=prod.name %>
+                            </p>
+    
+                            <p>Precio: <%=prod.price %>
+                            </p>
+    
+                            <img src="https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/basket_empty_shop_buy-256.png" alt="">
+                        </li>
+    
+    
                     <% }) %>
+
+                <% } else { %>
+                    
+                    <li><p>No hay productos :c</p></li>
+                <% } %>
+
             </ul>
 
     </body>
