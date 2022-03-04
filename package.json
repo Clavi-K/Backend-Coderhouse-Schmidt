@@ -1,23 +1,32 @@
 {
-  "name": "clase6.entregable",
+  "name": "backend-coderhouse-schmidt",
   "version": "1.0.0",
   "description": "",
-  "main": "Clase6.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clavi-K/Backend-Coderhouse-Schmidt.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clavi-K/Backend-Coderhouse-Schmidt/issues"
+  },
+  "homepage": "https://github.com/Clavi-K/Backend-Coderhouse-Schmidt#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "express-handlebars": "^6.0.2",
-    "handlebars": "^4.7.7",
-    "pug": "^3.0.2"
+    "knex": "^1.0.3",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.4.1",
+    "sqlite3": "^5.0.2"
   }
 }
